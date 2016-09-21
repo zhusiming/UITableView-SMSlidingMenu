@@ -13,6 +13,7 @@
 		544F39E61D7D7BCC0058469C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39E41D7D7BCC0058469C /* Main.storyboard */; };
 		544F39E81D7D7BCC0058469C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 544F39E71D7D7BCC0058469C /* Assets.xcassets */; };
 		544F39EB1D7D7BCC0058469C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 544F39E91D7D7BCC0058469C /* LaunchScreen.storyboard */; };
+		546116981D925DED00A17C93 /* SMSlidingMenu.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 546116971D925DED00A17C93 /* SMSlidingMenu.bundle */; };
 		54F4218E1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 54F4218D1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.m */; };
 /* End PBXBuildFile section */
 
@@ -27,6 +28,7 @@
 		544F39E71D7D7BCC0058469C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		544F39EA1D7D7BCC0058469C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		544F39EC1D7D7BCC0058469C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546116971D925DED00A17C93 /* SMSlidingMenu.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SMSlidingMenu.bundle; sourceTree = "<group>"; };
 		54F4218C1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+SMSlidingMenu.h"; sourceTree = "<group>"; };
 		54F4218D1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+SMSlidingMenu.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -88,6 +90,7 @@
 			children = (
 				54F4218C1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.h */,
 				54F4218D1D7FBB2F00C773FD /* UITableView+SMSlidingMenu.m */,
+				546116971D925DED00A17C93 /* SMSlidingMenu.bundle */,
 			);
 			path = "UITableView+SMSlidingMenu";
 			sourceTree = "<group>";
@@ -123,6 +126,7 @@
 				TargetAttributes = {
 					544F39D71D7D7BCC0058469C = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = XM8347382N;
 					};
 				};
 			};
@@ -152,6 +156,7 @@
 				544F39EB1D7D7BCC0058469C /* LaunchScreen.storyboard in Resources */,
 				544F39E81D7D7BCC0058469C /* Assets.xcassets in Resources */,
 				544F39E61D7D7BCC0058469C /* Main.storyboard in Resources */,
+				546116981D925DED00A17C93 /* SMSlidingMenu.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +282,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "UITableView+SMSlidingMenu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -289,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = XM8347382N;
 				INFOPLIST_FILE = "UITableView+SMSlidingMenu/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

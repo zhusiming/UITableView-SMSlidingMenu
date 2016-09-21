@@ -50,13 +50,13 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cellId"];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"row:%d",indexPath.row + 1];
+    cell.textLabel.text = [NSString stringWithFormat:@"row:%ld",indexPath.row + 1];
     return cell;
 }
 
 - (NSString *)tableView:(UITableView *)tableView titleForHeaderInSection:(NSInteger)section
 {
-    return [NSString stringWithFormat:@"section:%d",section + 1];
+    return [NSString stringWithFormat:@"section:%ld",section + 1];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
@@ -65,13 +65,25 @@
 }
 
 #pragma mark - SMTableViewSlidingMenuDelegate
-- (nullable NSArray<NSString *> *)slidingMenuSectionIndexTitlesForTableView:(UITableView *)tableView
+/*
+ *  设置右侧菜单按钮内容数组
+ */
+- (nullable NSArray<SliderMenuItem *> *)slidingMenuSectionIndexTitlesForTableView:( UITableView * _Nullable )tableView
 {
-    return @[@"a",@"b",@"c",@"d"];
+    return @[[SliderMenuItem typeImageWithImageName:@"SMSlidingMenu.bundle/friend_icon_search.png"],
+             [SliderMenuItem typeTextWithTitle:@"A"],
+             [SliderMenuItem typeTextWithTitle:@"B"],
+             [SliderMenuItem typeTextWithTitle:@"C"]];
 }
-- (NSInteger)tableView:(UITableView *)tableView slidingMenuSectionForSectionIndexTitle:(NSString *)title atIndex:(NSInteger)index
+
+
+/*
+ *  根据点击菜单的文本和索引位置，来制定表视图制定滑动到组的位置
+ *  注意： 如实现了此协议，表视图的组滚动位置完全手动设置。 否则：表视图会自动滚到到点击索引对应的组
+ */
+- (NSInteger)tableView:(UITableView * _Nullable)tableView slidingMenuSectionForSectionIndexItem:( SliderMenuItem * _Nullable)item atIndex:(NSInteger)index
 {
-    NSLog(@"%d",index);
-    return index + 1;
+    return index ;
 }
+
 @end
